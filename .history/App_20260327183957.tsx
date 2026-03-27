@@ -4,8 +4,7 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
-import Predictor from './Predictor';
-
+import Predictor from './project/Predictor';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -13,7 +12,7 @@ function App() {
   return (
     <SafeAreaProvider>
       <View style={{position:"absolute", top:10, left:10, zIndex:10}}>
-        <Predictor />
+  <Predictor />
 </View>
     </SafeAreaProvider>
   );

@@ -13,7 +13,7 @@ function App() {
   return (
     <SafeAreaProvider>
       <View style={{position:"absolute", top:10, left:10, zIndex:10}}>
-        <Predictor />
+  
 </View>
     </SafeAreaProvider>
   );

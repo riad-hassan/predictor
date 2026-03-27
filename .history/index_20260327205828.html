@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predictor</title>
+</head>
+<body>
+  <h1>Predictor Running ✅</h1>
+
+  <script>
+    fetch('/.netlify/functions/current')
+      .then(res => res.json())
+      .then(data => {
+        document.body.innerHTML += "<p>Current: " + data.crashPoint + "</p>";
+      });
+  </script>
+</body>
+</html>
